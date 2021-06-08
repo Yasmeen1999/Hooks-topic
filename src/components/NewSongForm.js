@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
+// by using addsongs props we are using this
 const Form = ({ addSongs }) => {
+  // usestate
   const [title, setTitle] = useState("");
+  // eventhandler
   const handleSubmit = (e) => {
     e.preventDefault();
     addSongs(title);
